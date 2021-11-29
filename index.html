@@ -24,7 +24,16 @@
   <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
   <script src="jQueryAssets/jquery.ui-1.10.4.dialog.min.js"></script>
   </head>
-	
+	<script>
+    navigator.bluetooth.requestDevice({
+        filters: [{
+            name: "Arvid's Gaming Galaxy"
+        }],
+        optionalServices: ['battery_service'] // Required to access service later.
+    })
+    .then(device => { /* … */ })
+    .catch(error => { console.error(error); });
+  </script>
   <style>
 	/*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
@@ -10738,9 +10747,9 @@ section {
 	  
 <div class="container-fluid">  
 	<div class="jumbotron">
-			    <p class="display-4">Oops!</p>
-			    <p class="lead">The page you're looking for doesn't exist</p>
-	        <a href="https://arvidw.space">Gå Hjem</a>
+			    <p class="display-4">404 ERROR</p>
+			    <p class="lead">This page took curse of vanishing</p>
+	        <a href="https://arvidw.space">Return to the bright side</a>
 <img style="width: 20%;" src="images/404.png" class="img-fluid" alt="Noice image"> </div>
 	  </div>
   <div class="foot">
