@@ -1,5 +1,3 @@
-# arvidwedtstein.github.io
-
 
 <h1 align="center">Well, hello there.We are @Devco-Morkjebla</h1>
 
